@@ -29,8 +29,8 @@
 
 </body>
 
-<th:block th:fragment="listTable">
-    <table class="job-listing" th:each="job : ${jobs}">
+<!--<th:block th:fragment="listTable">-->
+    <table th:fragment="listTable" class="job-listing" th:each="job : ${jobs}">
 
         <tr>
             <td>ID</td>
@@ -58,6 +58,6 @@
         </tr>
 
 </table>
-</th:block>
+<!--</th:block>-->
 
 </html>
