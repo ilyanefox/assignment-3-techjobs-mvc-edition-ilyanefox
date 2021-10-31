@@ -14,7 +14,7 @@
 
 <!--    <th:block th:replace = "fragments :: listTable"></th:block>-->
 
-    <table class="job-listing" th:block th:each="job : ${jobs}">
+    <table class="job-listing"  th:each="job : ${jobs}">
 
         <tr>
             <td>ID</td>
@@ -41,7 +41,6 @@
             <td th:text="${job.coreCompetency}"></td>
         </tr>
 
-        </th:block>
     </table>
 
 </div>
